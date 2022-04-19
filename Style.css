@@ -20,7 +20,7 @@ h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
+   
   }
 
   h2 {
@@ -38,8 +38,11 @@ body {
 
 header {
   background-color: rgb(46, 179, 179);
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 header a {
   text-decoration: none;
   color: #fce138;
@@ -54,9 +57,7 @@ header nav ul li  {
 
 
 header nav {
-  float: right;
   margin: 7px o;
-  
 }
 
 header nav ul li  a {
