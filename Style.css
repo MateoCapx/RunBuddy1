@@ -5,7 +5,12 @@
   box-sizing: border-box;
   
 }
-/* apply styles to <header> */ 
+
+body {
+  margin-left: 50px;
+  
+}
+/* apply styles to header Section */ 
 
 h1 {
   font-weight: bold;
@@ -31,11 +36,6 @@ h1 {
 }
 
 
-body {
-  margin-left: 50px;
-  
-}
-
 header {
   background-color: rgb(46, 179, 179);
   display: flex;
@@ -49,49 +49,31 @@ header a {
 
 }
 
-header nav ul li  {
-  
-  display: inline;
-  float: right;
-  }
+/* apply styles to  Navigation Section */ 
 
 
 header nav {
-  margin: 7px o;
+  margin: 7px 0;
 }
 
 header nav ul li  a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 22px;
-
-}
-/*   apply style to footer  */
-
-footer{
-  background-color: #fce138;
-  padding:40px 35px;
-  width: 100%;
-}
-
-footer div {
-  float: right;
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer h2{
-  display: inline;
-  color: #024e76;
-  font-size: 30px;
-  margin: 0;
+  font-size: 1.55vw;
 
 }
 
-footer a {
-  color: #024e76;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 
 }
+
+
+/* apply styles to <header> */ 
 
 section div h3 {
   color: #024e76;
@@ -383,4 +365,31 @@ color: #fce138;
 
 .contact-info a {
   color: #fce138;
+}
+
+/*   apply style to footer  */
+
+footer{
+  background-color: #fce138;
+  padding:40px 35px;
+  width: 100%;
+}
+
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer h2{
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+
+}
+
+footer a {
+  color: #024e76;
+
 }
