@@ -1,0 +1,162 @@
+* {         /*  Wildcard   -known as a universal selector      */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+      letter-spacing: 20px;
+    }
+  
+    header h1{
+      font-weight: bold;
+      font-size: 36px;
+      color: #fce138;
+      margin: 0;
+      display: inline;
+    }
+  
+    h2 {
+      line-height: 2;
+      font-family:Papyrus, Helvetica, Arial, sans-serif;
+      color: #024e76;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  
+  
+  body {
+    margin-left: 50px;
+    line-height: 1.5;
+    
+  }
+  
+  header {
+    background-color: rgb(46, 179, 179);
+  
+  }
+  header a {
+    text-decoration: none;
+    color: #fce138;
+  
+  }
+  
+  header nav ul li  {
+    
+    display: inline;
+    float: right;
+    }
+  
+  
+  header nav {
+    float: right;
+    margin: 7px o;
+    
+  }
+  
+  header nav ul li  a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+  
+  }
+
+
+  .hero {
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+.page-title{
+    color: #fce138;
+    display: inline-block;
+    border-bottom: 4px solid;
+    padding: o 80px 15px 80px;
+    font-weight: normal;
+    font-size: 42px;
+    font-style: italic;
+
+
+}
+
+
+
+footer{
+    background-color: #fce138;
+    padding:40px 35px;
+    width: 100%;
+  }
+  
+  footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer h2{
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  
+  }
+  
+  footer a {
+    color: #024e76;
+  
+  }
+
+
+  .hero {
+    background-position: bottom;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .page-title {
+    color: #fce138;
+    display: inline-block;
+    border-bottom: 4px solid #fce138;
+    padding: 0 80px 15px 80px;
+    font-weight: normal;
+    font-size: 42px;
+    font-style: italic;
+  }
+  
+  .secondary-content {
+    width: 80%;
+    margin: 0 auto;
+    color: #024e76;
+  }
+  
+  .secondary-content h3 {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+  
+  .secondary-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  .secondary-content ul {
+    margin: 15px 20px;
+  }
+  
+  .secondary-content li {
+    color: #39a6b2;
+    margin: 10px 0;
+  }
