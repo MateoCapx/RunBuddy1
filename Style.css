@@ -26,6 +26,7 @@ h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0.5);
    
   }
 
@@ -42,7 +43,13 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky; /* Allows for the Nav bar to be in a fixed position. Both properties need to be used  */
+  top: 0;           /* Allows for the Nav bar to be in a fixed position. Both properties need to be used */
+
+  
 }
+
 
 header a {
   text-decoration: none;
@@ -63,7 +70,15 @@ header nav ul li  a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 header nav ul {
@@ -118,6 +133,8 @@ font-size: 60px ;
 color: white;
 }
 
+
+
 /* CALL TO ACTION STYLES END */
 
 
@@ -135,13 +152,21 @@ color: white;
 }
 
 .hero-form{
-  background-color: #fce138;
+  background-color: rgba(252, 225, 56,0.7); /* Apply's Transpaceny to box by using the "rgba" atturibute  */ 
   padding: 20px;
   color: #024e76;
   border: solid 3px #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;  /* Apply's rounded corners to box elements   */ 
 }
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+  cursor:pointer;
+}
+
 
 .hero-form p {
   margin: 5px 0 15px 0;
@@ -162,6 +187,13 @@ color: white;
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 0.5);
+  
 }
 
 .hero-form label{
@@ -175,6 +207,7 @@ color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 15px;
 }
 
 /* HERO FORM STYLES END */
@@ -239,6 +272,11 @@ color: white;
   align-items: center;
   justify-content: space-between;
 }
+
+.step:last-child {
+  border-bottom: none;
+}
+
 
 .steps {
   background: #fce138;
@@ -418,6 +456,18 @@ color: #fce138;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 15px;
+
+
+}
+
+.contact-form input:focus{
+  background-color: rgba(255,255,255, 0.5);
+}
+
+.contact-form textarea:focus{
+  background-color: rgba(255,255,255, 0.5);
+
 }
 
 .contact-form button {
@@ -428,7 +478,15 @@ color: #fce138;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 15px;
 }
+
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
 
 .contact-info a {
   color: #fce138;
@@ -475,6 +533,9 @@ footer a {
 .flex-row {
   display: flex;
 }
+
+
+/* Media Queries Starts  */
 
 @media screen and (max-width: 980px) {
    header{
